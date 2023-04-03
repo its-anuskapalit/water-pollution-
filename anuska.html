@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+  </head>
+  <body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Healthy Aquatic Ecosystems</a>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+		<li><a href="details.html">DETAILS</a></li>
+        <li><a href="feedback.html">FEEDBACK</a></li>
+      </ul>
+    </div>
+	<div class="box"></div>
+  </nav>
+  <div class="img">
+  <!-- <div class="center"> -->
+    <div class="outer">
+      <div class="first"> 
+        <div class="inner"> <video src="video.mp4" controls></video>  </div>
+        <div class="inner"> <video src="video.mp4" controls></video></div>
+      </div>
+      
+      <div class="first"> 
+        <div class="inner"> <video src="video.mp4" controls></video></div>
+        <div class="inner"> <video src="video.mp4" controls></video></div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+    <!-- <div class="video-container"> 
+      <video src="video.mp4"></video> 
+      <video src="video.mp4"></video>
+    </div>
+	<div class="video-container2">
+      <video src="video.mp4"></video>
+      <video src="video.mp4"></video>
+  </div> -->
+	
+    <script>
+      const videos = document.querySelectorAll('video');
+
+      videos.forEach(video => {
+        video.addEventListener('click', () => {
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
